@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*    padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+a {
+    text-decoration: none !important;
+}
+h2 a {
+    color: #696969;
+}
+
+footer {
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #696969;
+}
+#code {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 20px 0px;
+}
+#code code {
+    padding: 0;
+    font-size: 80%;
+    color: #000;
+    background-color: #FFF !important;
+    border-radius: 0;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-danger {
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+}
+ 
+.bs-callout-warning {
+    background-color: #fefbed;
+    border-color: #f1e7bc;
+}
+ 
+.bs-callout-info {
+    background-color: #f0f7fd;
+    border-color: #d0e3f0;
+}
+ 
+.bs-callout-danger h4,
+.bs-callout-danger a.alert-link {
+    color: #B94A48;
+}
+ 
+.bs-callout-warning h4,
+.bs-callout-warning a.alert-link {
+    color: #C09853;
+}
+ 
+.bs-callout-info h4,
+.bs-callout-info a.alert-link {
+    color: #3A87AD;
+}
+ 
+.bs-callout a.alert-link {
+    font-weight: bold;
+}
+pre {
+    font-size: 12px;
+    border: 0px;
+    color: grey;
+}
+
+pre.code {
+    font-size: 11px;
+    background: #000;
+    color: yellowgreen;
+}
+
+#sidebar .active {
+    font-weight: bold;
+    color: coral;
+}
+code{
+    font-size: 80%;
+}
+#sidebar li:before {
+    content: "↳ ";
+    color: #ccc;
+}
+
+#content > h4:before {
+    content: "♟ ";
+    color:#B94A48;
+}
