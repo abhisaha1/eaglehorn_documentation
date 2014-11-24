@@ -28,9 +28,9 @@ $config['error'] = 2;
 
 
 /**
- * Application URL. eg. http://localhost/My-Application-Root-Dir
+ * Application URL. eg. http://localhost/My-Application-Root-Dir/public/
  */
-$config['site']['url'] = 'http://localhost/eaglehorn_documentation/public/';
+$config['site']['url'] = 'http://eaglehorn.org/';
 
 
 /* Root directory */

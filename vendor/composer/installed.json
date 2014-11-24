@@ -51,12 +51,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/ajaxtown/eaglehorn_framework.git",
-            "reference": "a3f89aa364b9298560e8f8efde388fb614668166"
+            "reference": "1d52d21210c1b516c60881cc3443d8b571ec5f19"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ajaxtown/eaglehorn_framework/zipball/a3f89aa364b9298560e8f8efde388fb614668166",
-            "reference": "a3f89aa364b9298560e8f8efde388fb614668166",
+            "url": "https://api.github.com/repos/ajaxtown/eaglehorn_framework/zipball/1d52d21210c1b516c60881cc3443d8b571ec5f19",
+            "reference": "1d52d21210c1b516c60881cc3443d8b571ec5f19",
             "shasum": ""
         },
         "require": {
@@ -66,7 +66,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.3.*"
         },
-        "time": "2014-11-22 14:19:14",
+        "time": "2014-11-24 15:16:27",
         "type": "framework",
         "installation-source": "source",
         "autoload": {
