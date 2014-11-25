@@ -47,6 +47,6 @@ class User extends Base {
 Output:
 <?php
 echo '<pre>'.$text->codeHighlight('<html></html>');
-echo $text->highlight_phrase('Eaglehorn is a PHP MVC Framework','Eaglehorn').'<br>';
-echo $text->highlight_phrase('Eaglehorn is a PHP MVC Framework','Eaglehorn','<i>','</i>');
+echo $text->highlightPhrase('Eaglehorn is a PHP MVC Framework','Eaglehorn').'<br>';
+echo $text->highlightPhrase('Eaglehorn is a PHP MVC Framework','Eaglehorn','<i>','</i>');
 ?>

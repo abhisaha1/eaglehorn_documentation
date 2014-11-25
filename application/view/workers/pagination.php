@@ -26,7 +26,7 @@ class User extends Base {
         $pagination = $this->load->worker(\'pagination\');
     
         $page = getParameters(1);
-        $target_url = SITEURL .\'home/worker/pagination\';
+        $target_url = configItem(\'site\')[\'url\'] .\'home/worker/pagination\';
         $total_count = 30;
         $limit = 3;
         
@@ -49,7 +49,7 @@ class User extends Base {
     $pagination = $this->load->worker('pagination');
     
     $page = getParameters(1);
-    $target_url = SITEURL .'home/worker/pagination';
+    $target_url = configItem('site')['url'] .'home/worker/pagination';
     $total_count = 30;
     $limit = 3;
     

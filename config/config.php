@@ -30,7 +30,7 @@ $config['error'] = 2;
 /**
  * Application URL. eg. http://localhost/My-Application-Root-Dir/public/
  */
-$config['site']['url'] = 'http://eaglehorn.org/';
+$config['site']['url'] = 'http://localhost/eaglehorn_documentation/';
 
 
 /* Root directory */
