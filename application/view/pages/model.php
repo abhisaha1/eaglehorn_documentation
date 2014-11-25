@@ -31,8 +31,20 @@ use Eaglehorn\Model;
 
 //using the Eaglehorn PDO
 class UserModel extends Model {
-
+    
+    
     function __construct() {
+    
+        /**
+         * You can pass $config as an optional parameter to use a different database
+         *
+         * $config = array(
+         *    \'dbname\'   => \'anotherdb\',
+         *    \'host\'     => \'localhost\',
+         *    \'user\'     => \'root\'
+         *    \'password\' => \'********\'
+         * );
+         */
         parent::__construct();
     }
     
