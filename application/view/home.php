@@ -104,7 +104,7 @@
                 <h2>About</h2>
                 <p>
                     Eaglehorn is a fast, simple and rapid application development MVC framework.
-                    Eaglehorn follows latest PSR-4 standards and uses composer. 
+                    Eaglehorn follows latest PSR standards and uses composer. 
                 </p>
             </div>
         </div>

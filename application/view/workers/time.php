@@ -28,7 +28,7 @@ class user extends Base {
      */
     function method1() {
         $handle = $this->load->worker(\'time\');
-        echo $handle->date_diff(\'2014-01-19 08:30:41\',\'2014-01-19 06:36:42\');
+        echo $handle->dateDiff(\'2014-01-19 08:30:41\',\'2014-01-19 06:36:42\');
         //prints 1 Hour 53 Minutes 59 Seconds
     }
     /**
@@ -36,7 +36,7 @@ class user extends Base {
      */
     function method1() {
         $handle = $this->load->worker(\'time\');
-        echo $handle->time_ago(\'2012-01-19 08:30:41\');
+        echo $handle->timeAgo(\'2012-01-19 08:30:41\');
         //prints 3 years ago
     }
     

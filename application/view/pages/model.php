@@ -39,7 +39,7 @@ class UserModel extends Model {
          * You can pass $config as an optional parameter to use a different database
          *
          * $config = array(
-         *    \'dbname\'   => \'anotherdb\',
+         *    \'db\'   => \'anotherdb\',
          *    \'host\'     => \'localhost\',
          *    \'user\'     => \'root\'
          *    \'password\' => \'********\'

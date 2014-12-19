@@ -34,8 +34,8 @@ class User extends Base {
      */
     function method1() {
         $handle = $this->load->worker(\'text\');
-        echo $handle->highlight_phrase(\'Eaglehorn is a PHP MVC Framework\',\'Eaglehorn\');
-        echo $handle->highlight_phrase(\'Eaglehorn is a PHP MVC Framework\',\'Eaglehorn\',\'<i>\',\'</i>\');
+        echo $handle->highlightPhrase(\'Eaglehorn is a PHP MVC Framework\',\'Eaglehorn\');
+        echo $handle->highlightPhrase(\'Eaglehorn is a PHP MVC Framework\',\'Eaglehorn\',\'<i>\',\'</i>\');
     }
     
 }

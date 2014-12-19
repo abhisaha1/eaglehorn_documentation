@@ -2,8 +2,8 @@ A really short guide to kick start Eaglehorn.
 <hr>
 
 <h4>Create a controller:</h4>
-    <p>Create a controller by the name home.php in the below path:</p>
-    <pre class="code">application/controller/home.php</pre>
+    <p>Create a controller by the name Home.php in the below path:</p>
+    <pre class="code">application/controller/Home.php</pre>
     <p>Create a view by the name hello.php in the below path:</p>
     <pre class="code">application/view/hello.php</pre>
     <p>Add the below code in Home.php controller:</p>
@@ -37,11 +37,11 @@ class Home extends Base {
 ?>
 </div>
 <p>Change the default controller to home by editing <code>config.php</code></p>
-<pre class="code">$config['site']['default_controller'] = 'Welcome';</pre>
+<pre class="code">$config['site']['default_controller'] = 'Home';</pre>
 
 <p>The last step is to run:</p>
 <pre class="code">
-composer dum-autoload -o
+composer dump-autoload -o
 </pre>
 which will do the autoload mappings.
 
