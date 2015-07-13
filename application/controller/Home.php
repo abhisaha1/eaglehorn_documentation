@@ -82,14 +82,14 @@ class Home extends Base {
     function credits()
     {
         
-        $page_path = configItem('site')['viewdir'] . 'credits.php';
+        $page_path = configItem('site')['viewdir'] .$this->version. '/credits.php';
         
         if(file_exists($page_path)) {
             
             $this->updated_on = date("F d Y H:i:s.", filemtime($page_path));
             $data = array(
                 'TITLE'     => 'Credits',
-                'CONTENT'   => 'credits.php'
+                'CONTENT'   => $this->version.'/credits.php'
             );
             $template = $this->load->template('one_column',$data);
 

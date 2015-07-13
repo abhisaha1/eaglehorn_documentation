@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
         
-        <link rel="stylesheet" href="{{configItem('site')['url']}}/css/style.css">
+        <link rel="stylesheet" href="{{configItem('site')['url']}}/public/css/style.css">
 
 
     </head>
@@ -39,10 +39,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="<?php echo configItem('site')['url']; ?>home/page/start">Documentation</a>
+                            <a href="{{configItem('site')['url']}}home/page/start">Documentation</a>
                         </li>
                         <li>
-                            <a href="<?php echo configItem('site')['url']; ?>home/credits">Credits</a>
+                            <a href="{{configItem('site')['url']}}home/credits">Credits</a>
                         </li>
                     </ul>
                 </div>
