@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'application\\' => array($baseDir . '/application'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Eaglehorn\\' => array($vendorDir . '/ajaxtown/eaglehorn_framework/src'),
 );

@@ -25,7 +25,7 @@
 
 
     <!-- Custom CSS -->
-    <link href="<?php echo configItem('site')['viewurl']; ?>css/grayscale.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
@@ -44,7 +44,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top navbar-inverse" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -72,7 +72,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="home/page/start">Documentation</a>
+                        <a class="page-scroll" href="home/page/start/2.0">Documentation</a>
                     </li>
                 </ul>
             </div>
@@ -88,8 +88,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Eaglehorn</h1>
-                        <p class="intro-text">A free, PHP MVC Framework for rapid application development.</p>
-                        <a href="https://github.com/ajaxtown/eaglehorn/archive/master.zip" class="btn btn-default btn-lg">Download</a>
+                        <p class="intro-text">A Tiny PHP MVC Framework</p>
+                        <a href="https://github.com/ajaxtown/eaglehorn/archive/master.zip" class="btn btn-default btn-lg">Download v2.0</a>
                     </div>
                 </div>
             </div>
@@ -100,11 +100,59 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-10 col-lg-offset-1">
                 <h2>About</h2>
                 <p>
-                    Eaglehorn is a fast, simple and rapid application development MVC framework.
+                    Eaglehorn is a fast, simple and rapid MVC framework. Its not Laravel. Its not Symfony.
+                    It allows you to build applications with most minimal configurations.
                     Eaglehorn follows latest PSR standards and uses composer. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature" class="container feature-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Features in v2.0</h2>
+                <p>
+                    <div class="col-lg-12 text-left">
+                        <h2 class="subtitle">Hooks</h2>
+                        <p>Now you can attach your classes to event listeners. For eg. 
+                         you might want to do some preprocessing work before the controller is loaded
+                         and a method is triggered.
+                        </p>
+                    </div>
+
+                </p>
+
+                <p>
+                    <div class="col-lg-12 text-left">
+                        <h2 class="subtitle">Twig</h2>
+                        <p>Eaglehorn now uses Twig as its template engine. It has ton's of features. Dont forget 
+                        to checkout its documentation.
+                        </p>
+                    </div>
+
+                </p>
+
+                <p>
+                    <div class="col-lg-12 text-left">
+                        <h2 class="subtitle">RedBeanPHP ORM</h2>
+                        <p>RedBeanPHP can be used instead of Eaglehorn's inbuilt Model class. 
+                        </p>
+                    </div>
+                </p>
+
+                <p>
+                    <div class="col-lg-12 text-left">
+                        <h2 class="subtitle">Improved Router</h2>
+                        <p>The router class has been improved, yet keeping it really simple.
+                            If you are making a small application you can ignore controllers, models etc. 
+                            Router now provides a callback function to execute your views without using the controller.
+                        </p>
+                    </div>
                 </p>
             </div>
         </div>
@@ -124,10 +172,10 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="<?php echo VIEWURL;?>js/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="<?php echo VIEWURL;?>js/grayscale.js"></script>
+    <script src="js/grayscale.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

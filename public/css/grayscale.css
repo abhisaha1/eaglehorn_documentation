@@ -24,12 +24,12 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
     letter-spacing: 1px;
 }
-
+h2 {
+    font-size: 24px;
+}
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -39,7 +39,7 @@ p {
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 1.6;
     }
 }
@@ -60,13 +60,14 @@ a:focus {
 .light {
     font-weight: 400;
 }
-
+.navbar-toggle .icon-bar {
+    background: indigo;
+}
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #FFF;
 }
 
 .navbar-custom .navbar-brand {
@@ -89,11 +90,11 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #734595;
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -107,15 +108,16 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    color: indigo;
 }
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  color: indigo;
+  background: none;
+}
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 5px 0;
         border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -123,11 +125,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #FFF;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(210, 210, 210, 0.3);
     }
 }
 
@@ -138,12 +140,9 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/street.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../img/bg.png) repeat bottom center scroll;
+    background-color: indigo;
+    
 }
 
 .intro .intro-body {
@@ -153,10 +152,13 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 @media(min-width:767px) {
@@ -166,11 +168,11 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 60px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 25px;
+        font-size: 15px;
     }
 }
 
@@ -248,12 +250,20 @@ a:focus {
     }
 }
 
-.content-section {
+.content-section,.feature-section {
     padding-top: 100px;
+    width: 100%;
+}
+.feature-section {
+    background: #f0f2f1;
 }
 
 @media(min-width:767px) {
     .content-section {
+        padding: 120px;
+    }
+
+    .feature-section {
         padding: 120px;
     }
 
@@ -267,25 +277,30 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
+    font-size: 12px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
-    background-color: transparent;
+    border: 1px solid indigo;
+    color: #FFF;
+    background-color: indigo;
+    border-radius: 0px;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid indigo;
     outline: 0;
-    color: #000;
-    background-color: #219ab3;
+    color: indigo;
+    background-color: #FFF;
 }
-
+h2.subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -310,7 +325,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 15px 0;
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 footer p {

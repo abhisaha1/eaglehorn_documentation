@@ -2,11 +2,28 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #5B5B5B;
     /*    padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.navbar {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    text-decoration: none;
 }
 a {
     text-decoration: none !important;
+    color: #734595;
 }
+a:hover, a:focus {
+    color: indigo;
+    text-decoration: underline;
+}
+
 h2 a {
     color: #696969;
 }
@@ -21,10 +38,17 @@ footer p {
     font-size: 12px;
     color: #696969;
 }
+.sidebar {
+    min-height: 20px;
+    padding: 19px 19px 19px 0;
+    margin-bottom: 20px;
+    border-right: 1px solid #eee;
+}
 #code {
     border: 1px solid #eee;
     padding: 20px;
     margin: 20px 0px;
+    line-height: 1.4em;
 }
 #code code {
     padding: 0;
@@ -78,15 +102,14 @@ footer p {
     font-weight: bold;
 }
 pre {
-    font-size: 12px;
+    font-size: 11px;
     border: 0px;
     color: grey;
 }
 
 pre.code {
     font-size: 11px;
-    background: #000;
-    color: yellowgreen;
+    color: #849671;
 }
 
 #sidebar .active {
@@ -95,10 +118,6 @@ pre.code {
 }
 code{
     font-size: 80%;
-}
-#sidebar li:before {
-    content: "↳ ";
-    color: #ccc;
 }
 
 #content > h4:before {

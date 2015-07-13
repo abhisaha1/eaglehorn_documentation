@@ -1,4 +1,6 @@
 <?php
-echo $this->header;
+$v = "hello";
+
+echo $v;
+
 ?>
-<h1>Header</h1>

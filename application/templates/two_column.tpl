@@ -9,20 +9,22 @@
         <meta property="og:site_name" content="Eaglehorn"/>
         <meta property="og:image" content=""/>
         <meta property="og:description" content="A free, PHP MVC Framework for rapid application development">
-        <title>{TITLE}</title>
+        <title>{{TITLE}}</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
         
-        <link rel="stylesheet" href="<?php echo configItem('site')['viewurl']; ?>css/style.css">
+        <link rel="stylesheet" href="{{configItem('site')['url']}}/css/style.css">
 
 
     </head>
 
     <body>
 
+   <!--{{inc("header.php")}}-->
+
         <!--        Navigation -->
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo configItem('site')['url']; ?>">Eaglehorn</a>
+                    <a class="navbar-brand" href="{{configItem('site')['url']}}">Eaglehorn</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,23 +68,20 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
                                         </div>-->
                     <!-- Blog Categories Well -->
-                    <div class="well">
-                        {SIDEBAR}
+                    <div class="sidebar">
+                        {{SIDEBAR|raw}}
                         <!-- /.row -->
                     </div>
                 </div>
                 <!-- Blog Entries Column -->
                 <div class="col-md-9" id="content">
 
-                    <h1 class="page-header">
-                        EagleHorn
-                        <small>PHP MVC Framework</small>
-                    </h1>
+
                     <h2>
-                        <a href="#">{TITLE}</a>
+                        <a href="#">{{TITLE}}</a>
                     </h2>
 
-                    {CONTENT}
+                    {{CONTENT|raw}}
                 </div>
             </div>
             <!-- /.row -->

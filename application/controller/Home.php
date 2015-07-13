@@ -3,38 +3,47 @@ namespace application\controller;
 use Eaglehorn\Base;
 
 class Home extends Base {
-    
-    public function __construct() {
+
+    var $version = '2.0';
+
+    public function __construct()
+    {
         parent::__construct();
     }
     
-    function index() {
+    function index()
+    {
         
         $data = array(
             'TITLE'     => 'Home',
             'CONTENT'   => 'page.php'
         );
-        $view = $this->load->view('home.php',$data);
+        $view = $this->load->view('2.0/home.php',$data);
         
         $view->render();
         
     }
     
-    function page($page) {
+    function page($page,$version = '')
+    {
+
+        if($version != '')
+        {
+            $this->version = $version;
+        }
+
         
-        
-        $page_path = configItem('site')['viewdir'] . 'pages/'.$page.'.php';
+        $page_path = configItem('site')['viewdir'] .$this->version. '/pages/'.$page.'.php';
         
         if(file_exists($page_path)) {
-            
+
             $this->updated_on = date("F d Y H:i:s.", filemtime($page_path));
             $data = array(
-                'SIDEBAR'   => 'sidebar.php',
+                'SIDEBAR'   => $this->version.'/sidebar.php',
                 'TITLE'     => ucfirst($page),
-                'CONTENT'   => 'pages/'.$page.'.php'
+                'CONTENT'   => $this->version.'/pages/'.$page.'.php'
             );
             $template = $this->load->template('two_column',$data);
-
             $template->render();
             
         }else{
@@ -42,18 +51,23 @@ class Home extends Base {
         }
     }
     
-    function worker($worker) {
-        
-        
-        $page_path = configItem('site')['viewdir'] . 'workers/'.$worker.'.php';
+    function worker($worker,$version = '')
+    {
+
+        if($version != '')
+        {
+            $this->version = $version;
+        }
+
+        $page_path = configItem('site')['viewdir'] .$this->version. '/workers/'.$worker.'.php';
         
         if(file_exists($page_path)) {
             
             $this->updated_on = date("F d Y H:i:s.", filemtime($page_path));
             $data = array(
-                'SIDEBAR'   => 'sidebar.php',
+                'SIDEBAR'   => $this->version . '/sidebar.php',
                 'TITLE'     => 'Worker • '.ucfirst($worker),
-                'CONTENT'   => 'workers/'.$worker.'.php'
+                'CONTENT'   => $this->version.'/workers/'.$worker.'.php'
             );
             $template = $this->load->template('two_column',$data);
 
@@ -63,29 +77,10 @@ class Home extends Base {
             echo '404';
         }
     }
-    function assembly($assembly) {
-        
-        
-        $page_path = configItem('site')['viewdir'] . 'assembly/'.$assembly.'.php';
-        
-        if(file_exists($page_path)) {
-            
-            $this->updated_on = date("F d Y H:i:s.", filemtime($page_path));
-            $data = array(
-                'SIDEBAR'   => 'sidebar.php',
-                'TITLE'     => 'Assembly • '.ucfirst($assembly),
-                'CONTENT'   => 'assembly/'.$assembly.'.php'
-            );
-            $template = $this->load->template('two_column',$data);
 
-            return $template->render();
-            
-        }else{
-            echo '404';
-        }
-    }
     
-    function credits() {
+    function credits()
+    {
         
         $page_path = configItem('site')['viewdir'] . 'credits.php';
         

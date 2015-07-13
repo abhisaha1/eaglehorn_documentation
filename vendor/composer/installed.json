@@ -6,15 +6,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/php-fig/log.git",
-            "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
+            "reference": "9e45edca52cc9c954680072c93e621f8b71fab26"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
-            "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/9e45edca52cc9c954680072c93e621f8b71fab26",
+            "reference": "9e45edca52cc9c954680072c93e621f8b71fab26",
             "shasum": ""
         },
-        "time": "2014-01-18 15:33:09",
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-06-02 13:48:41",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -23,8 +26,8 @@
         },
         "installation-source": "source",
         "autoload": {
-            "psr-0": {
-                "Psr\\Log\\": ""
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -51,12 +54,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/ajaxtown/eaglehorn_framework.git",
-            "reference": "1d52d21210c1b516c60881cc3443d8b571ec5f19"
+            "reference": "ee37d189d79a00b1cc72ada9168015e172202465"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ajaxtown/eaglehorn_framework/zipball/1d52d21210c1b516c60881cc3443d8b571ec5f19",
-            "reference": "1d52d21210c1b516c60881cc3443d8b571ec5f19",
+            "url": "https://api.github.com/repos/ajaxtown/eaglehorn_framework/zipball/ee37d189d79a00b1cc72ada9168015e172202465",
+            "reference": "ee37d189d79a00b1cc72ada9168015e172202465",
             "shasum": ""
         },
         "require": {
@@ -66,7 +69,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.3.*"
         },
-        "time": "2014-11-24 15:16:27",
+        "time": "2014-12-19 17:36:56",
         "type": "framework",
         "installation-source": "source",
         "autoload": {
@@ -92,5 +95,77 @@
         ],
         "description": "Framework for PHP 5.4+",
         "homepage": "https://github.com/ajaxtown/eaglehorn_framework"
+    },
+    {
+        "name": "twig/twig",
+        "version": "1.x-dev",
+        "version_normalized": "1.9999999.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twigphp/Twig.git",
+            "reference": "1ded65daeb8da1fb0d22016e53c2e7026557f040"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/1ded65daeb8da1fb0d22016e53c2e7026557f040",
+            "reference": "1ded65daeb8da1fb0d22016e53c2e7026557f040",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.7"
+        },
+        "time": "2015-07-05 08:50:23",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.19-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Twig Team",
+                "homepage": "http://twig.sensiolabs.org/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "redbeanphp",
+        "version": "master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "tar",
+            "url": "http://www.redbeanphp.com/downloadredbean.php",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist"
     }
 ]

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 
-        <link rel="stylesheet" href='<?php echo VIEWURL; ?>css/style.css'>
+        <link rel="stylesheet" href="<?php echo configItem('site')['viewurl']; ?>css/style.css">
 
 
     </head>
