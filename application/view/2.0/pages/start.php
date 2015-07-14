@@ -29,7 +29,7 @@ class Home extends Base
 ?>
 </div>
 
-<p>Change the default controller to home by editing <code>config.php</code></p>
+<p>Change the default controller to home by editing <code>app.config.php</code></p>
 <pre class="code">$config['site']['default_controller'] = 'Home';</pre>
 
 <p>The last step is to run:</p>

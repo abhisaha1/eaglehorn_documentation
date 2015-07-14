@@ -124,3 +124,75 @@ code{
     content: "♟ ";
     color:#B94A48;
 }
+@media(max-width:768px) {
+    .sidebar {
+        border-right: none;
+        background: indigo;
+        padding-left: 30px;
+    }
+
+    .sidebar a {
+        color: #FFF;
+    }
+
+    .sidebar h4 {
+        color: plum;
+        border-bottom: 1px dotted #734595;
+        border-top: 1px dotted #734595;
+        padding: 4px 0;
+    }
+}
+
+.navbar-toggle .icon-bar {
+    background: indigo;
+}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+
+    .container {
+        overflow-x: hidden;
+    }
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -60%; /* 6 columns */
+    }
+
+    .row-offcanvas-right.active {
+        right: 60%; /* 6 columns */
+    }
+
+    .row-offcanvas-left.active {
+        left: 60%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 60%; /* 6 columns */
+    }
+}

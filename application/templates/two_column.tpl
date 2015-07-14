@@ -27,7 +27,7 @@
         <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#eh_menu">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -36,7 +36,7 @@
                     <a class="navbar-brand" href="{{configItem('site')['url']}}">Eaglehorn</a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="eh_menu">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="{{configItem('site')['url']}}home/page/start">Documentation</a>
@@ -54,39 +54,36 @@
         <!-- Page Content -->
         <div class="container">
 
-            <div class="row">
+            <div class="row row-offcanvas row-offcanvas-left">
 
-
-                <!-- Blog Sidebar Widgets Column -->
-                <div class="col-md-3">
-
-
-
-                    <!-- Side Widget Well -->
-                    <!--                    <div class="well">
-                                            <h4>Side Widget Well</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-                                        </div>-->
-                    <!-- Blog Categories Well -->
+                <!-- Sidebar Column -->
+                <div class="col-md-3 col-sm-3 sidebar-offcanvas" id="sidebar">
                     <div class="sidebar">
                         {{SIDEBAR|raw}}
                         <!-- /.row -->
                     </div>
                 </div>
-                <!-- Blog Entries Column -->
-                <div class="col-md-9" id="content">
+                <!-- Content Column -->
+                <div class="col-md-9 col-sm-9" id="content">
 
-
+                    <button type="button" class="visible-xs pull-left navbar-toggle" data-toggle="offcanvas">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <h2>
-                        <a href="#">{{TITLE}}</a>
+                        {{TITLE}}
                     </h2>
 
                     {{CONTENT|raw}}
                 </div>
+
+
             </div>
             <!-- /.row -->
 
-            <hr>
+
 
             <!-- Footer -->
             <footer>
@@ -112,6 +109,14 @@
         ga('create', 'UA-55967210-1', 'auto');
         ga('send', 'pageview');
 
+
+        $(document).ready(function () {
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('.row-offcanvas').toggleClass('active')
+            });
+
+            $(".sidebar").height($("#content").height());
+        });
         </script>
     </body>
 
