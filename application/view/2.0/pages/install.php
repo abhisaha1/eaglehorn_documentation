@@ -8,7 +8,7 @@ to use it globally on your system. On Windows, you can use the Composer <a href=
 <h4>Via Composer:</h4>
     <p>You may also install Eaglehorn by issuing the Composer create-project command in your terminal:</p>
 <pre class="code">
-composer create-project ajaxtown/eaglehorn:dev-master
+composer create-project ajaxtown/eaglehorn
 </pre>
     
 <p>That will create the project by loading all dependencies. After this you need to create autoload class mappings.

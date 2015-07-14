@@ -37,7 +37,7 @@ wrapped inside {{ }}.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{TITLE}}</title>
         //<!--This is how you can add css. configItem() has been made to work here. -->
-        <link rel="stylesheet" href="{{configItem("site")["url"]}}/css/style.css">
+        <link rel="stylesheet" href="{{configItem(\'site\')[\'url\']}}/css/style.css">
     </head>
     <body>
         <header>

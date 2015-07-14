@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link href="<?php echo configItem('site')['url']; ?>public/css/grayscale.css" rel="stylesheet">
+    <link href="<?php echo configItem('site')['url']; ?>css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
@@ -171,10 +171,10 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="<?php echo configItem('site')['url']; ?>public/js/jquery.easing.min.js"></script>
+    <script src="<?php echo configItem('site')['url']; ?>js/jquery.easing.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="<?php echo configItem('site')['url']; ?>public/js/grayscale.js"></script>
+    <script src="<?php echo configItem('site')['url']; ?>js/grayscale.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

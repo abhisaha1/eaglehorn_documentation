@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
         
-        <link rel="stylesheet" href="{{configItem('site')['url']}}/public/css/style.css">
+        <link rel="stylesheet" href="{{configItem('site')['url']}}/css/style.css">
 
 
     </head>
@@ -115,7 +115,7 @@
                 $('.row-offcanvas').toggleClass('active')
             });
 
-            $(".sidebar").height($("#content").height());
+            $(".sidebar").css('min-height', $("#content").height());
         });
         </script>
     </body>

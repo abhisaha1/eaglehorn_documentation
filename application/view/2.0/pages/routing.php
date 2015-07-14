@@ -16,7 +16,7 @@
     
     <p>To make such URL's short, we use routes. You can add a rule in the 
         <code>application/routes.php</code> to map the above URL with a shorter one.</p>
-    <pre class="code">\Eaglehorn\Router::route( 'reg-user/method','employee-users-registered-user/method' );</pre>
+    <pre class="code">Router::route( 'reg-user/method','employee-users-registered-user/method' );</pre>
     
     <p>Now if you navigate to:</p>
     <pre class="code">http://localhost/public/reg-user/method</pre>

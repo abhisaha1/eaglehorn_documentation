@@ -22,10 +22,12 @@ date_default_timezone_set('Asia/Calcutta');
 | Site URL
 |--------------------------------------------------------------------------
 |
-| Change this to your site url
+| Change this to your site url. This is usually the Production URL.
+| For different environments, you should configure the url inside the
+| config file environment.config.php
 |
 */
-$config['site']['url'] = 'http://localhost/eaglehorn_documentation/';
+$config['site']['url'] = 'http://eaglehorn.org/';
 
 /*
 |--------------------------------------------------------------------------
