@@ -21,7 +21,6 @@ class Home extends Base {
         $view = $this->load->view('2.0/home.php',$data);
         
         $view->render();
-        
     }
     
     function page($page,$version = '')

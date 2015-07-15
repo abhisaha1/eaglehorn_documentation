@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 
-        <link rel="stylesheet" href="{{configItem('site')['url']}}public/css/style.css">
+        <link rel="stylesheet" href="{{configItem('site')['url']}}/css/style.css">
 
 
     </head>
@@ -18,10 +18,10 @@
     <body>
 
         <!--        Navigation -->
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#eh_menu">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -30,7 +30,7 @@
                     <a class="navbar-brand" href="{{configItem('site')['url']}}">Eaglehorn</a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="eh_menu">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="{{configItem('site')['url']}}home/page/start">Documentation</a>

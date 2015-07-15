@@ -49,13 +49,17 @@ footer p {
     padding: 20px;
     margin: 20px 0px;
     line-height: 1.4em;
+    background-color: #F5F5F5;
 }
 #code code {
     padding: 0;
     font-size: 80%;
     color: #000;
-    background-color: #FFF !important;
+    background-color: #F5F5F5 !important;
     border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    text-shadow: 0 1px white;
 }
 
 .bs-callout {
@@ -103,13 +107,15 @@ footer p {
 }
 pre {
     font-size: 11px;
-    border: 0px;
     color: grey;
+    border: medium none;
+    box-shadow: 0 1px 1px 0 #b3b3b3;
 }
 
 pre.code {
+    color: indigo;
     font-size: 11px;
-    color: #849671;
+    text-shadow: 0 1px #fff;
 }
 
 #sidebar .active {
@@ -118,11 +124,15 @@ pre.code {
 }
 code{
     font-size: 80%;
+    background-color: #f4f2f3;
+    box-shadow: 0 1px 0 0 #aaa;
+    color: indigo;
+    text-shadow: 0 1px white;
 }
 
 #content > h4:before {
     content: "♟ ";
-    color:#B94A48;
+    color:indigo;
 }
 @media(max-width:768px) {
     .sidebar {
