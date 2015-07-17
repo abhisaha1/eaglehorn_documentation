@@ -5,8 +5,10 @@
  */
 $config['environment'] = array(
 
-        'dev' => 'http://localhost/eaglehorn_documentation/public/',
+        'default' => 'http://localhost/eaglehorn_documentation/public/',
         'test' => 'http://test.eaglehorn/',
         'production' => 'http://eaglehorn.org/'
 
 );
+
+return $config;

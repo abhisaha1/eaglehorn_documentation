@@ -38,7 +38,7 @@ $config['site']['url'] = 'http://eaglehorn.org/';
 | something like app instead of application, feel free to change.
 |
 */
-$config['site']['rootdir'] = dirname(dirname(__FILE__)).'/';
+$config['site']['rootdir'] = dirname(dirname(dirname(__FILE__))).'/';
 $config['site']['appdir'] = $config['site']['rootdir'].'application/';
 
 /*

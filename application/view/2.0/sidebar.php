@@ -6,6 +6,7 @@
             <li><a class='<?php echo (getParameters(0) == 'install')?'active':''; ?>' href="<?php echo configItem('site')['url']; ?>home/page/install/<?php echo $this->version; ?>">Installation</a></li>
             <li><a class='<?php echo (getParameters(0) == 'start')?'active':''; ?>' href="<?php echo configItem('site')['url']; ?>home/page/start/<?php echo $this->version; ?>">Quick start</a></li>
             <li><a class='<?php echo (getParameters(0) == 'structure')?'active':''; ?>' href="<?php echo configItem('site')['url']; ?>home/page/structure/<?php echo $this->version; ?>">Structure</a></li>
+            <li><a class='<?php echo (getParameters(0) == 'environment')?'active':''; ?>' href="<?php echo configItem('site')['url']; ?>home/page/environment/<?php echo $this->version; ?>">Environment Setup</a></li>
         </ul>
     </div>
 </div>
