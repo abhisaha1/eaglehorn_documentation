@@ -7,6 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     $vendorDir . '/ajaxtown/eaglehorn_framework/src/Eaglehorn/common/functions.php',
-    $vendorDir . '/ajaxtown/eaglehorn_framework/src/Eaglehorn/error/ErrorHandler.php',
     $vendorDir . '/redbeanphp/rb.php',
 );

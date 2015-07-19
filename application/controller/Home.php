@@ -99,6 +99,9 @@ class Home extends Base {
         }
     }
     
-    
+    function handleError($error)
+    {
+        //display($error);
+    }
 }
 ?>

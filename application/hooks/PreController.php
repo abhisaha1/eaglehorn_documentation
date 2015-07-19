@@ -14,4 +14,19 @@ class PreController {
 
 
     }
+
+    function preload()
+    {
+
+    }
+
+    function error($error)
+    {
+
+    }
+
+    function notFound($error)
+    {
+        \Eaglehorn\View::show('header.php');
+    }
 }

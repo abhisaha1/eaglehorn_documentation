@@ -11,7 +11,7 @@ $config['hooks'] = array(
             'class'         => 'PreController',
             'namespace'     => 'hooks',
             'method'        => 'preload',
-            'active'        => 0
+            'active'        => 1
         ),
 
         'post_controller' => array(
@@ -28,5 +28,19 @@ $config['hooks'] = array(
             'method'        => 'pretemplate',
             'active'        => 1
 
+        ),
+
+        'error' => array(
+            'class'         => 'PreController',
+            'namespace'     => 'hooks',
+            'method'        => 'error',
+            'active'        => 1
+        ),
+
+        '404' => array(
+            'class'         => 'PreController',
+            'namespace'     => 'hooks',
+            'method'        => 'notFound',
+            'active'        => 1
         )
 );
