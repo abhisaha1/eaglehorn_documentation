@@ -22,12 +22,14 @@ date_default_timezone_set('Asia/Calcutta');
 | Site URL
 |--------------------------------------------------------------------------
 |
-| Change this to your site url. This is usually the Production URL.
-| For different environments, you should configure the url inside the
-| config file environment.config.php
+| You can leave this url blank. Instead configure your default environment
+| by editing the environment.config.php. Change the url of the default
+| environment. Optionally, you can create multiple environments.
+|
+| This url gets set automatically from the environment.
 |
 */
-$config['site']['url'] = 'http://eaglehorn.org/';
+$config['site']['url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -40,15 +42,6 @@ $config['site']['url'] = 'http://eaglehorn.org/';
 */
 $config['site']['rootdir'] = dirname(dirname(dirname(__FILE__))).'/';
 $config['site']['appdir'] = $config['site']['rootdir'].'application/';
-
-/*
-|--------------------------------------------------------------------------
-| Default Controller
-|--------------------------------------------------------------------------
-| The constructor or method with name index() will be triggered by default.
-|
-*/
-$config['site']['default_controller'] = 'Home';
 
 /*
 |--------------------------------------------------------------------------

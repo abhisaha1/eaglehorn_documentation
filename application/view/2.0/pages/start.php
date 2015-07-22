@@ -1,50 +1,14 @@
-A really short guide to kick start Eaglehorn.
+If you are done with the installation, you just need to configure the environment to make
+Eaglehorn run. This can be done easily by setting the appropriate url inside the
+<code>config/environment.config.php</code> file. You can set up multiple environments in this file.
+<a href="<?php echo configItem('site')['url']?>home/page/environment">Learn more</a>
 <hr>
 
-<h4>Create a controller:</h4>
-    <p>Create a controller by the name Home.php in the below path:</p>
-    <pre class="code">application/controller/Home.php</pre>
-    <p>Create a view by the name hello.php in the below path and some text:</p>
-    <pre class="code">application/view/hello.php</pre>
-    <p>Add the below code in Home.php controller:</p>
-<div id="code">
-<?php 
-    $text = $this->load->worker('Text');
-    echo $text->codeHighlight('namespace application\controller;
-use Eaglehorn\Base;
+<h4>Change default Controller</h4>
+<p>You can change the default controller to something else by editing <code>config/default/app.config.php</code></p>
+<pre class="code">$config['site']['default_controller'] = 'DefaultController';</pre>
 
-class Home extends Base
-{
-    public function __construct()
-    {
-        parent::__construct();
-    }
-    
-    function index()
-    {
-        $view = $this->load->view(\'hello.php\');
-        $view->render();
-    }   
-}  ');
-?>
-</div>
-
-<p>Change the default controller to home by editing <code>app.config.php</code></p>
-<pre class="code">$config['site']['default_controller'] = 'Home';</pre>
-
-<p>The last step is to run:</p>
-<pre class="code">
-composer dump-autoload -o
-</pre>
-which will do the autoload mappings.
-
-
-<p>Navigate to the below url (replace <code>your-project-folder</code> accordingly):</p>
-<pre class="code">http://localhost/your-project-folder/public</pre>
-
-<div id="code">
-    <?php
-    $text = $this->load->worker('Text');
-    echo $text->codeHighlight('Hello Eagle! //output');
-    ?>
+<div class="bs-callout bs-callout-danger">
+    Always remember to run <code>composer dump-autoload -o</code> after creating a new class. This will do the autoload
+    mappings.
 </div>
